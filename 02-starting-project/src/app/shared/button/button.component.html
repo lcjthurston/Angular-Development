@@ -5,6 +5,10 @@
 <!-- The span has the icon class selector -->
 <span class="icon">
     <!-- The ng-content has the icon element-selector -->
-    <ng-content select="icon"/>
+    <!-- <ng-content select="icon"/> -->
+    <ng-content select="icon">
+        <!-- This is fallback content in case the arrow in header component isn't there -->
+        →
+    </ng-content>
 </span>
 
